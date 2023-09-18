@@ -295,7 +295,9 @@ function bigOrSmall(arr) {
   return answers
 }
 
-console.log(bigOrSmall(bigOrSmallArray))
+let arrayEvaluator = bigOrSmall(bigOrSmallArray)
+console.log(arrayEvaluator)
+
 
 
 ////////////////// PROBLEM 16 ////////////////////
@@ -307,7 +309,16 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
+function theEliminator(contestants, loser) {
+  for(let i = 0; i < contestants.length; i++) {
+    let contestant = contestants[i]
+    if(contestant.includes(`${loser}`)) {
+      contestants.splice(i,1)
+    }
+  } return contestants
+}
 
+console.log(theEliminator(contestants, loser))
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
@@ -317,7 +328,12 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+function makesUpper(string) {
+  let stringUpper = string.toUpperCase()
+  return stringUpper
+}
 
+console.log(makesUpper(sampleString))
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
@@ -329,6 +345,12 @@ let sampleString = "Hi, my name is Kylo."
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
+
+//CODE HERE
+function emailCheck(email) {
+
+}
+
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
