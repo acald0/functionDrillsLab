@@ -398,17 +398,17 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 
 //CODE HERE
 function inOrder(array) {
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 2; i < array.length; i++) {
     let currentNumber = array[i]
-    if(currentNumber > array[i-1]) {
-      return true
-    } else {
+    if(currentNumber <= array[i - 1]) {
       return false
+    } 
     }
+    return true
   } 
-}
-let arrayIsAscending = inOrder(sampleArray)
 
+let arrayIsAscending = inOrder(sampleArray)
+console.log(arrayIsAscending)
 
 
 ////////////////// PROBLEM 22 ////////////////////
